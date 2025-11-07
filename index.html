@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sq" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah ibn Mubarak - Fjalë për Lotin dhe Qarjen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .quote-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .quote-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .quote-card:nth-child(1) { animation-delay: 0.1s; }
+        .quote-card:nth-child(2) { animation-delay: 0.2s; }
+        .quote-card:nth-child(3) { animation-delay: 0.3s; }
+        .quote-card:nth-child(4) { animation-delay: 0.4s; }
+        .quote-card:nth-child(5) { animation-delay: 0.5s; }
+        .quote-card:nth-child(6) { animation-delay: 0.6s; }
+        .quote-card:nth-child(7) { animation-delay: 0.7s; }
+        .quote-card:nth-child(8) { animation-delay: 0.8s; }
+
+        .quote-icon {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .quote-text {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 20px;
+            font-style: italic;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+        }
+
+        .quote-arabic {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 15px;
+            direction: rtl;
+            text-align: right;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-family: 'Traditional Arabic', 'Arabic Typesetting', serif;
+        }
+
+        .quote-explanation {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.8;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .category {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0.9;
+        }
+
+        .tear-icon {
+            display: inline-block;
+            animation: tear-fall 2s ease-in-out infinite;
+        }
+
+        @keyframes tear-fall {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .quote-text {
+                font-size: 1.1em;
+            }
+
+            .quote-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Abdullah ibn Mubarak</h1>
+            <p class="subtitle">Fjalë për Lotin dhe Qarjen <span class="tear-icon">💧</span></p>
+        </header>
+
+        <div class="quotes-container">
+            <div class="quote-card">
+                <div class="quote-icon">💎</div>
+                <div class="quote-text">
+                    "Kur njeriu qan nga frika e Allahut, lotët e tij janë më të çmuara se ari dhe argjendi."
+                </div>
+                <div class="quote-arabic">
+                    إذا بكى العبد من خشية الله كانت دموعه أغلى من الذهب والفضة
+                </div>
+                <div class="quote-explanation">
+                    Abdullah ibn Mubarak theksonte se lotët e sinqertë të pendimit dhe frikës ndaj Allahut kanë një vlerë të paimagjinueshme. Këto lot pastrojnë shpirtin dhe afrojnë njeriun me Krijuesin e tij.
+                </div>
+                <span class="category">Frika nga Allahu</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">🌙</div>
+                <div class="quote-text">
+                    "Nëse do të dija se Allahu pranon prej meje edhe një lot, do të dëshiroja që të isha qarë gjithë jetën time."
+                </div>
+                <div class="quote-arabic">
+                    لو علمت أن الله قبل مني دمعة واحدة لتمنيت أن أكون بكيت طول عمري
+                </div>
+                <div class="quote-explanation">
+                    Kjo fjalë tregon thellësinë e devotshmërisë së Abdullah ibn Mubarek. Ai e dinte se çdo lot i derdhur për Allahun është një adhurim i pranuar dhe një shenjë e zemrës së butë.
+                </div>
+                <span class="category">Devotshmëri</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">🌟</div>
+                <div class="quote-text">
+                    "Zemrat fortësohen nga mëkatet, dhe vetëm lotët e pendimit i zbuten ato."
+                </div>
+                <div class="quote-arabic">
+                    تقسو القلوب بالذنوب، ولا تلينها إلا دموع التوبة
+                </div>
+                <div class="quote-explanation">
+                    Ibn Mubarak na mëson se mëkatet ngurtësojnë zemrën tonë, por lotët e sinqertë të pendimit kanë fuqinë të butësojnë dhe të pastrojnë atë që është ngurtësuar nga gjynahet.
+                </div>
+                <span class="category">Pendim</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">✨</div>
+                <div class="quote-text">
+                    "Një lot i derdhur në errësirën e natës është më i dashur për Allahun se një qese plot me ari dhënë si lëmoshë me krenari."
+                </div>
+                <div class="quote-arabic">
+                    دمعة في جوف الليل أحب إلى الله من كيس مملوء ذهباً يتصدق به المتكبر
+                </div>
+                <div class="quote-explanation">
+                    Kjo fjalë thekson vlerën e përuljes dhe sinqeritetit. Lotët e fshehta të natës, të derdhura në përulësi, janë më të çmuara se veprat e mëdha të bëra me mendjemadhësi.
+                </div>
+                <span class="category">Përulësi</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">🕌</div>
+                <div class="quote-text">
+                    "Syri që ruan veten nga të ndaluarat, Allahu e ruaj atë nga zjarri. Dhe syri që qan nga frika e Allahut, asnjë lot i tij nuk humbet."
+                </div>
+                <div class="quote-arabic">
+                    العين التي تحفظ نفسها عن الحرام يحفظها الله من النار، والعين التي تبكي من خشية الله لا تضيع دمعتها
+                </div>
+                <div class="quote-explanation">
+                    Abdullah ibn Mubarak na kujtonte se sytë që ruhen nga harami do të shpëtojnë nga zjarri, dhe çdo lot i derdhur për Allahun është i regjistruar dhe i shpërblyer.
+                </div>
+                <span class="category">Shpërblimi</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">🌿</div>
+                <div class="quote-text">
+                    "Nëse nuk mund të qash nga frika e Allahut, atëherë qaj për pamundësinë tënde për të qarë."
+                </div>
+                <div class="quote-arabic">
+                    إن لم تستطع أن تبكي من خشية الله فابك على عدم قدرتك على البكاء
+                </div>
+                <div class="quote-explanation">
+                    Një mësim i thellë që tregon se edhe pamundësia për të qarë duhet të na shqetësojë. Nëse zemra është ngurtësuar aq shumë sa nuk mund të qahet, kjo vetë është një problem që kërkon zgjidhje.
+                </div>
+                <span class="category">Vetëdije</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">☪️</div>
+                <div class="quote-text">
+                    "Gjëja që më bëri të jem ajo që jam ishin netët e gjata në adhurim dhe lotët e derdhur në secilën."
+                </div>
+                <div class="quote-arabic">
+                    ما بلغني ما بلغت إلا بالليالي الطويلة في العبادة والدموع المنهمرة في كل منها
+                </div>
+                <div class="quote-explanation">
+                    Abdullah ibn Mubarak, një dijetar i madh dhe luftëtar i devotshëm, tregon sekretin e suksesit të tij shpirtëror: netët e gjata në adhurim të shoqëruara me lot të sinqertë.
+                </div>
+                <span class="category">Adhurim Nate</span>
+            </div>
+
+            <div class="quote-card">
+                <div class="quote-icon">💫</div>
+                <div class="quote-text">
+                    "Lotët janë gjuha e zemrës kur goja nuk gjen fjalë për t'i shprehur pendimin."
+                </div>
+                <div class="quote-arabic">
+                    الدموع لغة القلب عندما يعجز اللسان عن التعبير عن الندم
+                </div>
+                <div class="quote-explanation">
+                    Kjo fjalë na mëson se lotët janë një formë e pastër komunikimi me Allahun. Kur fjalët bien shkurt, lotët flasin me gjuhën e zemrës së thyer dhe të penduar.
+                </div>
+                <span class="category">Komunikim Shpirtëror</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>Abdullah ibn Mubarak (rahimehullah) - 118-181 Hixhri</p>
+            <p>Një nga dijetarët më të mëdhenj të salafut, i njohur për devotshmërinë, diturinë dhe xhihadin e tij.</p>
+        </footer>
+    </div>
+</body>
+</html>
